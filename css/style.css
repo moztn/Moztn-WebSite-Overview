@@ -1,0 +1,90 @@
+      h2{
+        color:#34618C;
+        text-align: center;
+      }
+
+      table{
+        width: 100%;
+        display: table;
+      }
+      table tr{
+       display: table-row;
+      }
+      
+      table tr td{
+        display: table-cell;
+        width: 20%;
+        background-color: #FEFCFC;
+        border: 1px solid #CCC;
+        vertical-align: top;
+        border-radius: 3px;
+      }
+
+      .done.small{
+        background-image: url("https://cdn2.iconfinder.com/data/icons/fugue/bonus/icons-24/tick.png");
+        background-repeat: no-repeat;
+        background-position: 5px 6px;
+      }
+
+      .done.large{
+        background-image: url("https://cdn2.iconfinder.com/data/icons/fugue/bonus/icons-24/tick.png");
+        background-repeat: no-repeat;
+        background-position: 10px 8px;
+      }
+      .not-done{
+        background-image: url("https://cdn4.iconfinder.com/data/icons/icocentre-free-icons/114/f-cross_256-16.png");
+        background-repeat: no-repeat;
+        background-position: 10px 12px;
+      }
+
+      .loding{
+        background-image: url("https://cdn1.iconfinder.com/data/icons/silk2/hourglass.png");
+        background-repeat: no-repeat;
+        background-position: 10px 12px;
+      }
+
+      .element-without-title{
+        margin-top:100px;
+      }
+
+      .first-link{
+        text-align: center;
+        margin: 40px;
+      }
+      .first-link a{
+        background-color: #C0C0AC;
+        text-decoration: none;
+        padding: 10px 10px 10px 42px;
+        border-radius: 3px;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 21px;
+        border: 1px solid #C0C080;
+      }
+
+
+      .first-link a:hover{
+        color: #604C4C;
+      }
+
+      .second-link{
+        text-align: left;
+        margin-bottom: 50px;
+        margin-left: 71px;
+      }
+
+      .second-link a{
+        background-color: #A2A293;
+        text-decoration: none;
+        padding: 10px 10px 10px 36px;
+        border-radius: 3px;
+        color: #FFF;
+        font-size: 17px;
+        width: 49%;
+        display: inline-block;
+      }
+
+      .second-link a:hover{
+        color: #3F3232;
+      }
+
