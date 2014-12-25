@@ -13,7 +13,7 @@
       
       table tr td{
         display: table-cell;
-        width: 20%;
+        width: 12%;
         background-color: #FEFCFC;
         border: 1px solid #CCC;
         vertical-align: top;
@@ -55,7 +55,7 @@
         background-color: #C0C0AC;
         text-decoration: none;
         padding: 10px 10px 10px 42px;
-        border-radius: 3px;
+        border-radius: 25px;
         color: #FFF;
         font-weight: bold;
         font-size: 21px;
@@ -70,14 +70,14 @@
       .second-link{
         text-align: left;
         margin-bottom: 50px;
-        margin-left: 71px;
+        margin-left: 45px;
       }
 
       .second-link a{
         background-color: #A2A293;
         text-decoration: none;
         padding: 10px 10px 10px 36px;
-        border-radius: 3px;
+        border-radius: 20px;
         color: #FFF;
         font-size: 17px;
         width: 49%;
