@@ -7,7 +7,10 @@
   </head>
 
   <body>
-
+<table border="1" style='width:100%'> 
+  <tr id="tab">
+</tr>
+</table>
     <div class="first-link">
       <a class="done large" href="https://medmack.github.io/moztn-home-page/">Home Page</a>
     </div>
@@ -37,7 +40,7 @@
         </td>
 
         <td> 
-          <div class="done large"><a class="not-done" href="http://moztn.github.io/Contribute/">Contribute</a></div>
+          <div class="done large"><a class="done large" href="http://moztn.github.io/Contribute/">Contribute</a></div>
               <div class="second-link">
                 <a class="done small" href="http://bug.mozilla-tunisia.org/">Bug</a>
               </div> 
@@ -69,5 +72,23 @@
        
       </tr>
     </table>
+
+    <script>
+      var tab = document.getElementById('tab');
+      function printRepoCount() {
+        var responseObj = JSON.parse(request.responseText);
+        for (i = 0; i <= responseObj.length; i++) {
+          if ((responseObj[i].updated_at > "2014-12-20T00:00:00Z")&&(responseObj[i].name != "Moztn-WebSite-Overview")) {
+            tab.innerHTML += "<th>"+responseObj[i].name + " ("+responseObj[i].open_issues+")"+ "</th>" ;
+          }
+        }
+      }
+
+      var request = new XMLHttpRequest();
+      request.onload = printRepoCount;
+      request.open('get', 'https://api.github.com/users/moztn/repos', true)
+      request.send()
+    </script>  
+
   </body>
 </html>
